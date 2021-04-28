@@ -6,7 +6,7 @@ use Alura\DesignPattern\Orcamento;
 
 class DescontoMaisDe5Itens extends Desconto
 {
-    public function calculaDesconto(Orcamento $orcamento): float
+    public function calculaDesconto(Orcamento $orcamento): int
     {
 
         if ($orcamento->quantidadeItens > 5) {

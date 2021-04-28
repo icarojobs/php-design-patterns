@@ -6,7 +6,7 @@ use Alura\DesignPattern\Orcamento;
 
 class DescontoMaisDe1000Reais extends Desconto
 {
-    public function calculaDesconto(Orcamento $orcamento): float
+    public function calculaDesconto(Orcamento $orcamento): int
     {
         if ($orcamento->valor >= 1000) {
             return $orcamento->valor * 0.6;

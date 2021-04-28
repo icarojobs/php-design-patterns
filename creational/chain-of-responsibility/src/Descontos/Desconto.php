@@ -6,10 +6,12 @@ use Alura\DesignPattern\Orcamento;
 
 abstract class Desconto
 {
-    abstract public function calculaDesconto(Orcamento $orcamento): float;
+    const DEFAULT_VALUE = 0;
+
+    abstract public function calculaDesconto(Orcamento $orcamento): int;
 
     public function defaultValue()
     {
-        return 0.0;
+        return self::DEFAULT_VALUE;
     }
 }
